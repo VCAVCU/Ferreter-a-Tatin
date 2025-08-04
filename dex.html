@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería Tatin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ferretería Tatin</h1>
+        <div class="cart" onclick="toggleCart()">
+            🛒 Carrito (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <main>
+        <section class="products" id="products">
+            <!-- Productos se cargarán aquí -->
+        </section>
+    </main>
+
+    <aside id="cart-sidebar" class="hidden">
+        <h2>Carrito de Compras</h2>
+        <div id="cart-items"></div>
+        <p>Total: $<span id="cart-total">0.00</span> USD</p>
+        <button onclick="checkout()">Confirmar Pedido</button>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Ferretería Tatin - Ventas en Cuba</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
